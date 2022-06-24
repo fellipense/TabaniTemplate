@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'fonte1';
+    src: url('fontes/fonte1.ttf') format('truetype');
+    font-weight: bolder;
+    font-style: normal;
+  } 
+
+:root{
+    --cor1: #bf174a;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: fonte1;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+body{
+    background-color: white;
+}
+
+header, main{
+    background-color: white;
+    text-indent: 10px;
+    text-align: justify;
+    box-shadow: 0px 0px 100px 30px rgba(0, 0, 0, 1);
+}
+
+header{
+    position: relative;
+    z-index: 2;
+    height: 100px;
+    border-bottom: 5px solid var(--cor1);
+}
+
+#conjunto{
+    position: absolute;
+    top: 0px;
+    right: 10px;
+}
+
+#menuprincipal{
+    display: inline;
+    height: 100px;
+    font-size: 30px;
+    padding: 50px;
+    margin: 0 10px;
+}
+
+header img{
+    display: inline;
+    height: 100px;
+}
+
+header nav a#selecionado, header nav a#selecionado:hover{
+    background-color: var(--cor1);
+    color: white;
+}
+
+#menuprincipal a{
+    color: black;
+    position: relative;
+    padding: 32px;
+    margin: 0 -5px;
+    top: 15px;
+}
+
+#menuprincipal a:hover{
+    transition-duration: 0.5s;
+    background-color: rgb(201, 201, 201);
+}
+
+img.hamburguer{
+    position: relative;
+    top: 27px;
+    right: 27px;
+    width: 45px;
+    height: auto;
+}
+
+body div#degrade{
+    z-index: 1;
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    height: 350px;
+    background-image: linear-gradient(90deg, #bf184b, #c1957e, #c1b98b, #a7b280, #393a34);
+}
+
+main{
+    position: relative;
+    z-index: 2;
+    width: 80%;
+    margin: 200px auto;
+    margin-bottom: 0px;
+    padding: 50px;
+}
+
+main a{
+    color: var(--cor1);
+}
+
+main a:visited{
+    color: var(--cor1);
+}
+
+h2{
+    margin-top: 50px;
+}
+
+div.aviso{
+    font-size: 1.5em;
+    padding: 10px;
+    border: 5px solid var(--cor1);
+}
+
+h2{
+    margin-bottom: 20px;
+}
+
+p{
+    margin-bottom: 10px;
+}
+
+footer{
+    position: relative;
+    z-index: 3;
+    background-color: black;
+    padding: 5px;
+    text-align: center;
+}
+
+footer p{
+    color: white;
+    margin-bottom: 0;
+    font-family: serif;
+    font-weight: lighter;
+}
+
+footer a{
+    color: white;
+    font-weight: bolder;
+}
